@@ -1,0 +1,221 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+
+  .main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-banner {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      .form-filter {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        .filter-icon {
+          background-color: #42794a;
+          color: #ffffff;
+          padding: 5px 7px;
+          border-radius: 5px;
+        }
+      }
+
+      .search-box {
+        //   max-width: 100%;
+        width: 946px;
+        height: 48px;
+        border-radius: 10px;
+        border-color: #eeeeee;
+        border: 1px solid #eeeeee;
+        padding: 12px;
+      }
+
+      .banner-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #e9f7ef;
+        border-radius: 10px;
+        padding: 12px 20px;
+      }
+    }
+
+    .transaction-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 12px; // gap between rows
+      font-family: "Inter", sans-serif;
+
+      thead {
+        th {
+          text-align: left;
+          font-weight: 600;
+          font-size: 13px;
+          color: #888;
+          padding: 8px 16px;
+        }
+      }
+
+      tbody {
+        tr {
+          background: #fff;
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
+          border-radius: 8px;
+          overflow: hidden;
+
+          td {
+            padding: 14px 16px;
+            font-size: 14px;
+            color: #2d2d2d;
+            vertical-align: middle;
+          }
+
+          .wallet {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+          }
+
+          .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+
+            &.pending {
+              background: #fff8e5;
+              color: #d98c00;
+              border: 1px solid #ffd87a;
+            }
+            &.failed {
+              background: #ffeaea;
+              color: #d64545;
+              border: 1px solid #ff9b9b;
+            }
+            &.success {
+              background: #e6f9ef;
+              color: #27ae60;
+              border: 1px solid #8ee2b3;
+            }
+          }
+
+          .view-link {
+            color: #27ae60;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .no-data {
+        text-align: center;
+        padding: 16px;
+        font-size: 14px;
+        color: #777;
+      }
+    }
+
+    .status-badge {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+
+      &.pending {
+        background: #fff3cd;
+        color: #856404;
+      }
+      &.failed {
+        background: #f8d7da;
+        color: #721c24;
+      }
+      &.success {
+        background: #d4edda;
+        color: #155724;
+      }
+    }
+
+    .custom-pagination {
+      .page-item {
+        margin: 0 3px;
+
+        .page-link {
+          border-radius: 50% !important;
+          width: 36px;
+          height: 36px;
+          line-height: 34px;
+          text-align: center;
+          border: 1px solid #ddd;
+          color: #555;
+          font-size: 14px;
+          background: #fff;
+          padding: 0;
+        }
+
+        &.active .page-link {
+          background-color: #2e7d32; // green
+          border-color: #2e7d32;
+          color: #fff;
+          font-weight: 600;
+        }
+
+        .page-link:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+.custom-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  .page-item {
+    margin: 0 3px;
+
+    .page-link {
+      // border-radius: 50% !important;
+      width: 36px;
+      height: 36px;
+      line-height: 34px;
+      text-align: center;
+      border: 1px solid #ddd;
+      color: #555;
+      font-size: 14px;
+      background: #fff;
+      padding: 0;
+    }
+
+    &.active .page-link {
+      background-color: #2e7d32; // green
+      border-color: #2e7d32;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .page-link:hover {
+      background: #f0f0f0;
+    }
+  }
+}

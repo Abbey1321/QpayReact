@@ -1,0 +1,151 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+
+  .main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+        margin: 0;
+      }
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e9f7ef;
+      border-radius: 12px;
+      height: 240px;
+      width: 100%;
+      // padding: 20px;
+
+      .banner-text {
+        flex: 1;
+
+        h4 {
+          font-weight: bold;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+      .banner-image img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .option-header {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 10px;
+    }
+    .option-card {
+      width: 238px;
+      height: 211px;
+      border-radius: 14px;
+      padding: 24px;
+      gap: 30px;
+      background-color: #eef8f2;
+      border-radius: 14px;
+      //   border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      h6 {
+        font-weight: bold;
+        font-size: 14px;
+        color: #42794a;
+      }
+
+      p {
+        font-size: 13px;
+        color: #999999;
+        margin: 0;
+      }
+
+      &:hover {
+        background: #f1fdf5;
+        border-color: #28a745;
+      }
+      .option-icon {
+        background-color: #42794a;
+        border-radius: 50%;
+        // height: 64px;
+        // width: 64px;
+        padding: 20px;
+
+        svg {
+          color: #ffffff;
+          font-size: 20px;
+        }
+      }
+    }
+    .pos-card {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      height: 200px;
+
+      .service-card {
+        border-radius: 10px;
+        width: calc(50% - 5px);
+        .card-body {
+          display: flex;
+          gap: 12px;
+        }
+
+        .service-item {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 75px;
+          gap: 20px;
+          // height: 200%;
+          img {
+            height: 40px;
+            width: 40px;
+            color: #28a745;
+          }
+
+          span {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin: 0;
+            font-size: 12px;
+            color: #252525;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
