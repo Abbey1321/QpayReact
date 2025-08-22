@@ -1,8 +1,6 @@
 import React from "react";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import Banner from "../assests/Banner.png";
-import Sidebar from "../components/Sidebar"; // adjust path if needed
-// import "../Profile.scss";
 import "../styles/Profile.scss";
 import { FaBuildingColumns, FaCartShopping, FaIdCard } from "react-icons/fa6";
 import { BsSuitcaseLgFill } from "react-icons/bs";
@@ -37,9 +35,9 @@ export default function Profile() {
           {/* </div> */}
         </div>
         <Row className="option-header">
-          <Col md={3}>
+          <Col md={3} xxl={3} xl={3}>
             <Card className="option-card">
-              <Card.Body>
+              <Card.Body className="card-body">
                 <span className="option-icon">
                   <FaBuildingColumns />
                 </span>

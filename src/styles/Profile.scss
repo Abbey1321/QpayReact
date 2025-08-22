@@ -56,12 +56,12 @@
         width: 100%;
       }
     }
-    .option-header {
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      gap: 10px;
-    }
+    // .option-header {
+    //   display: flex;
+    //   justify-content: center;
+    //   padding: 10px;
+    //   gap: 10px;
+    // }
     .option-card {
       width: 238px;
       height: 211px;
@@ -73,7 +73,9 @@
       //   border-radius: 10px;
       cursor: pointer;
       transition: all 0.2s ease;
-
+      .card-body{
+        display: grid;
+      }
       h6 {
         font-weight: bold;
         font-size: 14px;
@@ -94,7 +96,7 @@
         background-color: #42794a;
         border-radius: 50%;
         // height: 64px;
-        // width: 64px;
+        width: 62px;
         padding: 20px;
 
         svg {

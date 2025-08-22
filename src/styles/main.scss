@@ -1,5 +1,8 @@
+
 @use 'variables' as *;  
 @use 'mixins' as *;
+// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 * {
   box-sizing: border-box;
@@ -166,6 +169,7 @@ a:hover {
   width: 24px;
   text-align: center;
 }
+
 
 .sidebar-footer {
   // margin-top: auto;
